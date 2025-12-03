@@ -54,7 +54,7 @@ st.markdown("""
 
 
 st.title("📊 Histogram Fitting Web App")
-st.write("This is a starter template for a single-page Streamlit app.")
+st.write("By Lucas Kovacevic")
 st.markdown("---")
 sidebar = st.sidebar
 # -----------------------------------------------------------
@@ -414,4 +414,5 @@ with col2:
                                 st.session_state[slider_key] = float(dist_params[i])
                         return reset_callback
                     
+
                     st.button("Return to default fit", key=f"reset_{name}", on_click=make_reset_callback(name, params))
